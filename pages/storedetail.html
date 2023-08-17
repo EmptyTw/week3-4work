@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>門市據點</title>
+    <%- include('./layout/common.ejs'); -%>  
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container">
+      <div class="storedetail">
+        <h1 class="f-48">門市據點</h1>
+        <div class="selectstore f-24">
+          <span class="">選擇分店</span>
+          <select name="store">
+            <option value="0">請選擇分店</option>
+            <option value="1">台北中山旗艦店</option>
+            <option value="2">台北綠園店</option>
+            <option value="3">台中清水旗艦店</option>
+            <option value="4">高雄中正形象店</option>
+            <option value="5">高雄夢時代店</option>
+        </select>
+        </div>
+        <div class="main d-flex">
+          <div class="main-left">
+            <img src="../assets/images/storepage-1.png" alt="">
+            <div class="main-content">
+            <div class="main-title f-24">台北中山旗艦店</div>
+            <ul>
+              <li class="f-20">
+                <span class="material-symbols-outlined f-18">
+                    call
+                </span>
+                電話：(02)000-1234
+              </li>
+              <li class="f-20">
+                <span class="material-symbols-outlined f-18">
+                  schedule
+                  </span>
+                  營業時間：10:00-21:00
+              </li>
+              <li class="f-20">
+                <span class="material-symbols-outlined f-18">
+                  location_on
+                  </span>
+                  地址：台北市中山區南京東路25巷2-1號
+              </li>
+            </ul>
+            </div>
+          </div>
+          <div class="main-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28941.259717283217!2d121.24153702166068!3d24.943736333981974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ce051055d3%3A0x1f8b118e483793c6!2z5aSn5YCJ6YW355y86Y-hLeWFp-WjoueSsOadseW6lw!5e0!3m2!1szh-TW!2stw!4v1692194389517!5m2!1szh-TW!2stw" width="100%" 
+            height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

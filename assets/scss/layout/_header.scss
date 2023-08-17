@@ -1,0 +1,66 @@
+.header{
+  background: $success;  
+  padding: $f16 0;
+  img{
+    width: 80px;
+    height: 49px;    
+    transition: .5s;
+    &:hover{
+      transform: scale(0.8);
+    }
+  }
+  ul{
+    gap:64px;
+    li{
+      
+      a{
+        color: $text-white;
+        transition: .5s;
+        padding: 12px 0;
+        &:hover{
+          color:$text-black;
+        }
+      }
+    }
+  }
+}
+@include pad {
+  .header{
+    padding: 16px 36px;
+  }
+}
+@include mobile {
+  
+  .header{
+    padding: 0;
+    .container{
+      padding: 0;
+    }
+    
+    img{
+      padding: 16px 15px;
+      
+    }
+  }
+  .nav{
+    flex-wrap: wrap;  
+    
+    ul{
+      
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 0;
+      li{
+        
+        width: 50%;
+        text-align: center;
+        //border: 1px solid $text-white;
+        font-size: $f16;     
+        a{
+          display: block; 
+          border: 1px solid $text-white;
+        }   
+      }
+    }
+  }
+}

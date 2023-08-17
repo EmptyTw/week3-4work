@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>門市據點</title>
+    <%- include('./layout/common.ejs'); -%>  
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container">
+      <div class="storedetail">
+        <h1 class="f-48">門市據點</h1>
+        <div class="selectstore f-24">
+          <span class="">選擇地區</span>
+          <select name="store">
+            <option value="1">台北市</option>
+          </select>
+        </div>
+        <div class="store d-flex flex-wrap">
+          <div class="store-left">
+            <img src="../assets/images/store-1.png" alt="">
+            <div class="store-content">
+            <div class="store-title f-24">台北中山旗艦店</div>
+            <ul class="f-20">
+              <li>
+                <span class="material-symbols-outlined">call</span>
+                電話：(02)000-1234
+              </li>
+              <li class="">
+                <span class="material-symbols-outlined">schedule</span>
+                  營業時間：10:00-21:00
+              </li>
+              <li class="address">
+                <span class="material-symbols-outlined">location_on</span>
+                  地址：台北市中正區復興南路 132-1 號
+              </li>
+            </ul>
+            <a href="storedetail.html">詳細資訊</a>
+            </div>
+          </div>
+
+          <div class="store-left">
+            <img src="../assets/images/store-2.png" alt="">
+            <div class="store-content">
+            <div class="store-title f-24">台北綠園店</div>
+            <ul class="f-20">
+              <li>
+                <span class="material-symbols-outlined">call</span>
+                電話：(02)000-2345
+              </li>
+              <li class="">
+                <span class="material-symbols-outlined">schedule</span>
+                  營業時間：10:00-21:00
+              </li>
+              <li class="">
+                <span class="material-symbols-outlined">location_on</span>
+                  地址：台北市中正區復興南路 132-1 號
+              </li>
+            </ul>
+            <a href="storedetail.html">詳細資訊</a>
+            </div>
+          </div>
+          
+          <div class="store-left">
+            <img src="../assets/images/store-3.png" alt="">
+            <div class="store-content">
+            <div class="store-title f-24">台中清水旗艦店</div>
+            <ul class="f-20">
+              <li>
+                <span class="material-symbols-outlined">call</span>
+                電話：(02)000-1234
+              </li>
+              <li class="">
+                <span class="material-symbols-outlined">schedule</span>
+                  營業時間：10:00-21:00
+              </li>
+              <li class="">
+                <span class="material-symbols-outlined">location_on</span>
+                地址：台北市中正區復興南路 132-1 號
+              </li>
+            </ul>
+            <a href="storedetail.html">詳細資訊</a>
+            </div>
+          </div>
+          
+          <div class="store-left">
+            <img src="../assets/images/store-4.png" alt="">
+            <div class="store-content">
+            <div class="store-title f-24">高雄中正形象店</div>
+            <ul class="f-20">
+              <li>
+                <span class="material-symbols-outlined">call</span>
+                電話：(02)000-2345
+              </li>
+              <li class="">
+                <span class="material-symbols-outlined">schedule</span>
+                  營業時間：10:00-21:00
+              </li>
+              <li class="">
+                <span class="material-symbols-outlined">location_on</span>
+                地址：台北市中正區復興南路 132-1 號
+              </li>
+            </ul>
+            <a href="storedetail.html">詳細資訊</a>
+            </div>
+          </div>
+          <div class="store-left">
+            <img src="../assets/images/store-5.png" alt="">
+            <div class="store-content">
+            <div class="store-title f-24">高雄夢時代店</div>
+            <ul class="f-20">
+              <li>
+                <span class="material-symbols-outlined">call</span>
+                電話：(02)000-1234
+              </li>
+              <li class="">
+                <span class="material-symbols-outlined">schedule</span>
+                  營業時間：10:00-21:00
+              </li>
+              <li class="">
+                <span class="material-symbols-outlined">location_on</span>
+                地址：台北市中正區復興南路 132-1 號
+              </li>
+            </ul>
+            <a href="storedetail.html">詳細資訊</a>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

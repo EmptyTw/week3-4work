@@ -1,0 +1,114 @@
+.storedetail{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    h1{
+        border-left: 8px solid $success;
+        padding-left: 16px;
+        font-weight: bold;
+    }
+}
+.selectstore{
+    margin-top: 33px;
+    
+    span{
+        margin-right: 28px;
+    }
+    select{
+       font-size: $f18;
+       width: 304px;
+       height: 38px;
+    }
+}
+.main{
+    margin-top: 46px;
+    gap: 0 24px;
+    &-title{
+        border-bottom: 1px solid #00000020;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 24px;
+    }
+    &-left{
+        width: calc((100% - 24px)/2);
+        
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        ul{
+            padding: 16px 24px;
+            
+            li{
+                margin-bottom: 8px;
+            }
+        }
+      
+    }
+    &-right{
+        width: calc((100% - 24px)/2);
+        height: auto;
+    }
+    &-content{
+        border: 1px solid #00000020;
+    }
+}
+
+@include pad {
+    .main{
+        flex-direction: column;
+        gap: 24px 0;
+        &-left{
+            display: flex;
+            gap: 0 24px;
+            width: 100%;
+        }
+        img{
+            width: calc((100% - 24px)/2);
+        }
+        &-content{
+            width: calc((100% - 24px)/2);
+        }
+        &-right{
+            width: 100%;
+            
+            iframe{
+                min-height: 400px;
+            }
+        }
+    }
+    
+}
+@include mobile {
+    .selectstore{
+        font-size: $f16;
+        display: flex;
+        align-items: center;
+        span{
+            margin-right: 20px;
+        }
+        select{
+            width: 75%;
+        //    width: calc(100% - 20px - 64px );
+            font-size: $f16;
+        }
+    }
+    .main{
+        flex-direction: column;
+        gap: 24px 0;
+        &-left{
+            display: block;
+           
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+        &-content{
+            width: 100%;
+            iframe{
+                min-height: 400px;
+            }
+        }
+        }
+}

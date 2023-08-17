@@ -1,0 +1,13 @@
+@import './helpers/reset';
+@import './variables';
+@import './mixins/device';
+@import './helpers/default';
+@import './pages/base';
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+@import './pages/qa';
+@import './pages/store';
+@import './pages/storedetail';

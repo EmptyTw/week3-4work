@@ -1,0 +1,84 @@
+.storedetail{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    h1{
+        border-left: 8px solid $success;
+        padding-left: 16px;
+        font-weight: bold;
+    }
+}
+.selectstore{
+    margin-top: 33px;
+    
+    span{
+        margin-right: 28px;
+    }
+    select{
+       font-size: $f18;
+       width: 304px;
+       height: 38px;
+    }
+}
+.store{
+    margin-top: 46px;
+    gap:48px 24px;
+    &-title{
+        border-bottom: 1px solid #00000020;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 24px;
+    }
+    &-left{
+        width: calc((100% - 48px)/3);
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        ul{
+            padding: 16px 24px;
+            height: 100%;
+            li{
+                margin-bottom: 8px;
+            }
+        }
+      
+    }  
+    &-content{
+        border: 1px solid #00000020;
+    }
+    a{
+        display: block;
+        background-color: $secondary;
+        text-align: center;
+        padding: 16px 0;
+        width: 100%;
+        font-size: 19px;
+        &:hover{
+            color: $success;
+        }
+    }
+}
+
+@include pad {
+    .store{
+        gap: 24px;
+        &-left{
+            width: calc((100% - 24px)/2);
+        }
+    }
+}
+@include mobile {
+    .selectstore{
+        select{
+            width: 75%;
+            font-size: $f16;
+        }
+    }
+    .store{
+        &-left{
+            width: 100%;
+        }
+        
+    }
+}
