@@ -5,24 +5,40 @@
 .foot-top{
   margin-bottom: 32pxq;
 }
-a{
-  color: $text-white;
- 
-  &:hover{
-    color: $text-black;
-  }
-}
+
 .section-left{
   flex-direction: column;
   
-  ul{gap:48px;
-    margin-bottom: 36px;}
+  ul{
+    gap:48px;
+    margin-bottom: 36px;
+    a{
+      color: $text-white;
+    
+      &:hover::after{
+        width: 100%;
+      }
+      &::after{
+        content: '';
+        display: block;
+        width: 0%;
+        height: 2px;
+        background-color: $text-white;
+        margin: 0 auto;
+        transition: .5s;
+      }
+    }
+  }
 }
 .section-right{
   ul{gap:32px;}
   img{
     width: 48px;
     height: 48px;
+    transition: .5s;
+    &:hover{
+      transform: scale(1.2);
+    }
   }
 }
 

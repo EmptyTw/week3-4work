@@ -12,18 +12,27 @@
   ul{
     gap:64px;
     li{
-      
-      a{
+       a{
         color: $text-white;
-        transition: .5s;
-        padding: 12px 0;
-        &:hover{
-          color:$text-black;
+        &:hover::after{
+          width: 100%;
         }
-      }
+        &::after{
+          content: '';
+          display: block;
+          width: 0%;
+          height: 2px;
+          background-color: $text-white;
+          margin: 0 auto;
+          transition: .5s;
+        }
+       }
     }
   }
+  
 }
+
+
 @include pad {
   .header{
     padding: 16px 36px;
